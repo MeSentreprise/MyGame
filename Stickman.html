@@ -111,8 +111,8 @@
 			visibility: visible;
 		}
 	</style>
-<link id='-gd-engine-icon' rel='icon' type='image/png' href='Game.icon.png' />
-<link rel='apple-touch-icon' href='Game.apple-touch-icon.png'/>
+<link id='-gd-engine-icon' rel='icon' type='image/png' href='Stickman.icon.png' />
+<link rel='apple-touch-icon' href='Stickman.apple-touch-icon.png'/>
 
 </head>
 <body>
@@ -135,10 +135,10 @@
 		<div id='status-notice' class='godot' style='display: none;'></div>
 	</div>
 
-	<script type='text/javascript' src='Game.js'></script>
+	<script type='text/javascript' src='Stickman.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
-		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"Game","experimentalVK":false,"fileSizes":{"Game.pck":3378848,"Game.wasm":13351459},"focusCanvas":true,"gdnativeLibs":[]};
+		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"Stickman","experimentalVK":false,"fileSizes":{"Stickman.pck":3378848,"Stickman.wasm":13351459},"focusCanvas":true,"gdnativeLibs":[]};
 		var engine = new Engine(GODOT_CONFIG);
 
 		(function() {
@@ -220,7 +220,7 @@
 				displayFailureNotice('WebGL not available');
 			} else {
 				setStatusMode('indeterminate');
-				engine.startGame({
+				engine.startStickman({
 					'onProgress': function (current, total) {
 						if (total > 0) {
 							statusProgressInner.style.width = current/total * 100 + '%';
